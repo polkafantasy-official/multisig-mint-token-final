@@ -1390,6 +1390,7 @@ contract erc20Token is Context, AccessControl, ERC20, ERC20Burnable, ERC20Pausab
 
         _setupRole(MINTER_ROLE, account);
         _setupRole(PAUSER_ROLE, account);
+        _setupDecimals(decimals);
     }
 
     /**
